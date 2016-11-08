@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.newthink.user02.venteembarquee">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <supports-screens android:anyDensity="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mobi_logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".acceiul_activity" />
+        <activity android:name=".tournee_activity" />
+        <activity android:name=".livraison_activity" />
+        <activity android:name=".tournee_du_jour_activity" />
+        <activity android:name=".planifier_livraison_activity" />
+        <activity android:name=".synchronisation_activity" />
+        <activity android:name=".CaptureSignatureActivity" />
+        <activity android:name=".CaptureSignature" />
+        <activity android:name=".stock_activity" />
+        <activity android:name=".Cloturer_Tournee" />
+        <activity android:name=".Imprimer_bon" />
+        <activity android:name=".Initialisation_1" />
+        <activity android:name=".Initialisation_2" />
+        <activity android:name=".Initialisation_3" />
+        <activity
+            android:name=".Cloture1"
+            android:label=""></activity>
+        <activity
+            android:name=".Cloture2"
+            android:label=""></activity>
+        <activity android:name=".Cloture3"></activity>
+    </application>
+
+</manifest>

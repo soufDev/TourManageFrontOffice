@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".livraison_activity"
+    android:background="@drawable/bg_livraison">
+
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:id="@+id/relativeLayout"
+        android:gravity="center"
+        >
+
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/menu"
+            android:id="@+id/btnAcceuil"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_marginLeft="100dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:id="@+id/login_dispalay" />
+
+        <Button
+            android:id="@+id/btndeconnexion"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/close"
+            android:layout_marginLeft="80dp"
+            />
+    </LinearLayout>
+    <TableLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="87dp">
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="75dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="Client"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Adresse"
+                android:textColor="#fff" />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:background="#000000"
+
+
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Etat"
+                android:textColor="#fff" />
+        </TableRow>
+
+    </TableLayout>
+    <ListView
+        android:layout_marginTop="188dp"
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:id="@+id/listLiv"
+        android:layout_weight="1.52"
+        android:choiceMode="singleChoice"
+        android:listSelector="#8A2CBBFF"/>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:id="@+id/relativeLayout_ajoute"
+        android:gravity="center"
+        android:layout_marginTop="486dp"
+        >
+        <!--<Button
+            android:id="@+id/btnajouter_livraison"
+            android:layout_width="111dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ajouter_livraison"
+
+            />
+            -->
+    </LinearLayout>
+    </RelativeLayout>

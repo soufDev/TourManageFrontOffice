@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".initialisation_1"
+    android:id="@+id/relativeLayout1"
+    android:background="@drawable/bg_init_1">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:id="@+id/relativeLayout"
+        android:gravity="center"
+        >
+
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/menu"
+            android:id="@+id/btnAcceuil"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_marginLeft="100dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:id="@+id/login_dispalay" />
+
+        <Button
+            android:id="@+id/btndeconnexion"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/close"
+            android:layout_marginLeft="80dp"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        >
+
+
+
+
+        <EditText
+            android:id="@+id/CashRecu"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:background="@drawable/champ_text_init1"
+            android:hint="Cash reçu"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:layout_marginTop="120dp"/>
+
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:id="@+id/KMDebut"
+            android:layout_alignTop="@+id/KMtextView"
+            android:hint="KM Actuel"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:layout_marginTop="12dp"/>
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="80dp"
+            >
+            <Button
+                android:id="@+id/buttonAnnuler"
+                android:layout_width="103dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/annuler"
+                android:layout_marginRight="5dp"
+                android:onClick="annuler"
+                />
+            <Button
+                android:id="@+id/btnValider"
+                android:layout_width="103dp"
+                android:layout_height="50dp"
+                android:onClick="suivant"
+                android:background="@drawable/suivant"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

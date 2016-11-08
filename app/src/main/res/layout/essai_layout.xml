@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cloturer_Tournee">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:background="#0095B6"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/login_dispalay" />
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/home_menu"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/btnAcceuil"
+            android:adjustViewBounds="false" />
+        <ImageButton
+            android:id="@+id/btndeconnexion"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/close"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+    <TabHost
+        android:id="@+id/tabHostC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/etape11"
+                    android:layout_width="match_parent"
+                    android:layout_height="441dp"
+                    android:background="#E3DAC9"
+                    android:orientation="vertical"
+                    android:textAlignment="center">
+        <!--hna-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#0095B6"
+                        android:padding="10dp"
+                        android:text="ID Produit"
+                        android:textColor="#fff"
+                        android:id="@+id/textView8"
+                        android:layout_alignTop="@+id/Reel"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/Reel"
+                        android:layout_toStartOf="@+id/Reel" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#0095B6"
+                        android:padding="10dp"
+                        android:text="Designation"
+                        android:textColor="#fff"
+                        android:id="@+id/Reel"
+                        android:layout_toLeftOf="@+id/textView7"
+                        android:layout_toRightOf="@+id/buttonannuler"
+                        android:layout_toEndOf="@+id/buttonannuler" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#0095B6"
+                        android:padding="10dp"
+                        android:text="Qte Estime"
+                        android:textColor="#fff"
+                        android:id="@+id/textView7"
+                        android:layout_alignTop="@+id/Reel"
+                        android:layout_toLeftOf="@+id/textView6"
+                        android:layout_toStartOf="@+id/textView6" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#0095B6"
+                        android:padding="10dp"
+                        android:text="Qte Reel"
+                        android:textColor="#fff"
+                        android:id="@+id/textView6"
+                        android:layout_alignTop="@+id/textView7"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="258dp"
+                        android:id="@+id/ListPrduitClient"
+                        android:layout_weight="1.52"
+                        android:choiceMode="singleChoice"
+                        android:listSelector="#8A2CBBFF"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <!--hna-->
+                    <Button
+                        android:id="@+id/buttonannuler"
+                        android:text="@string/annuler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="annuler"
+                        android:layout_marginTop="250dp"
+                        android:layout_alignLeft="@+id/KMFin"
+                        android:layout_alignStart="@+id/KMFin" />
+                    <Button
+                        android:id="@+id/btnsuivant"
+                        android:text="@string/suivant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="suivant"
+                        android:layout_alignTop="@+id/buttonannuler"
+                        android:layout_toRightOf="@+id/buttonannuler"
+                        android:layout_toEndOf="@+id/buttonannuler" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/etape22"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E3DAC9"
+                    android:orientation="vertical"
+                    android:textAlignment="center"
+                    >
+
+                    <TextView
+                        android:text="KM Debut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="111dp"
+                        android:id="@+id/KMtextView"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="15dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:text="Cash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:id="@+id/CashtextView"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="#000000" />
+                    <TextView
+                        android:text="KM Fin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/KilomtrageFin"
+                        android:textColor="#000000"
+                        android:layout_below="@+id/KMtextView"
+                        android:layout_alignLeft="@+id/KMtextView"
+                        android:layout_alignStart="@+id/KMtextView"
+                        android:layout_marginTop="35dp" />
+                    <EditText
+                        android:id="@+id/CashFinal"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:layout_alignBottom="@+id/CashtextView"
+                        android:layout_alignLeft="@+id/KMFin"
+                        android:layout_alignStart="@+id/KMFin" />
+                    <EditText
+                        android:id="@+id/KMDebut"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:layout_above="@+id/KilomtrageFin"
+                        android:layout_centerHorizontal="true" />
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/KMFin"
+                        android:inputType="number"
+                        android:layout_alignBaseline="@+id/KilomtrageFin"
+                        android:layout_alignBottom="@+id/KilomtrageFin"
+                        android:layout_alignLeft="@+id/KMDebut"
+                        android:layout_alignStart="@+id/KMDebut" />
+
+
+
+                    <Button
+                        android:layout_marginTop="300dp"
+                        android:id="@+id/btnsuivant2"
+                        android:text="@string/suivant"
+                        android:onClick="suivant2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="240dp"
+                        />
+                    <Button
+                        android:layout_marginTop="300dp"
+                        android:id="@+id/btnprecedent"
+                        android:text="@string/precedent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="130dp"
+                        android:onClick="precedent"
+                        />
+                    <Button
+                        android:layout_marginTop="300dp"
+                        android:id="@+id/btnannuler"
+                        android:text="@string/annuler"
+                        android:onClick="annuler2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/etape33"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E3DAC9"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:text="Date Debut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/CmdTextView"
+                        android:textColor="#000000"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="50dp" />
+
+                    <TextView
+                        android:text="Ecart Caisse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ComClien"
+                        android:textColor="#000000"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <EditText
+                        android:id="@+id/DateDebut"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/CmdTextView"
+                        android:layout_toRightOf="@+id/EcartStocktextView"
+                        android:layout_alignRight="@+id/DateFin"
+                        android:layout_alignEnd="@+id/DateFin" />
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EcartCaisse"
+                        android:layout_alignBottom="@+id/ComClien"
+                        android:layout_toRightOf="@+id/ComClien"
+                        android:layout_toEndOf="@+id/ComClien" />
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/DateFin"
+                        android:inputType="date"
+                        android:layout_below="@+id/CmdTextView"
+                        android:layout_toRightOf="@+id/CmdTextView"
+                        android:layout_toEndOf="@+id/CmdTextView" />
+
+                    <TextView
+                        android:text="Date Fin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/DateTextView"
+                        android:textColor="#000000"
+                        android:layout_alignBottom="@+id/DateFin"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EcartStock"
+                        android:layout_below="@+id/DateTextView"
+                        android:layout_alignLeft="@+id/DateFin"
+                        android:layout_alignStart="@+id/DateFin" />
+
+                    <TextView
+                        android:text="Ecart Stock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EcartStocktextView"
+                        android:textColor="#000000"
+                        android:layout_alignBottom="@+id/EcartStock"
+                        android:layout_toLeftOf="@+id/EcartCaisse"
+                        android:layout_toStartOf="@+id/EcartCaisse" />
+                    <TextView
+                        android:text="@string/signature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SignatureTextView"
+                        android:textColor="#000000"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="220dp"/>
+                    <!--hn-->
+                    <Button
+                        android:id="@+id/signature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="signer"
+                        android:text="Signer"
+                        android:layout_marginTop="220dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_toEndOf="@+id/SignatureTextView"/>
+                    <Button
+                        android:layout_marginTop="300dp"
+                        android:id="@+id/btndemarrer"
+                        android:text="Fermer"
+                        android:onClick="fermer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="240dp"
+                        />
+                    <Button
+                        android:layout_marginTop="300dp"
+                        android:id="@+id/btnprecedent2"
+                        android:text="@string/precedent"
+                        android:onClick="precedent2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="130dp"
+                        />
+                    <Button
+                        android:layout_marginTop="300dp"
+                        android:id="@+id/btnannuler3"
+                        android:text="@string/annuler"
+                        android:onClick="annuler3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

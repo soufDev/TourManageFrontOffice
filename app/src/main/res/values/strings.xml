@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Vente Embarquee</string>
+    <string name="username">Nom Utilisateur</string>
+    <string name="connexion">Se connecter</string>
+    <string name="password">Mot de passe</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_menu_acceiul">Acceuil</string>
+    <string name="ma_tournee">Ma tournée du jour</string>
+    <string name="livraiosn">Livraison</string>
+    <string name="prise_commande">Prise commande</string>
+    <string name="visualisation_stock">Visualisation stock</string>
+    <string name="encaisement">Encaissement</string>
+    <string name="prospect">Prospect</string>
+    <string name="retour">Retour</string>
+    <string name="cloture_tournee">Cloturer Tournée</string>
+    <string name="kilometrage">KM Actuel</string>
+    <string name="cash">Cash Reçu</string>
+    <string name="suivant">Suivant</string>
+    <string name="valider">Valider</string>
+    <string name="annuler">Annuler</string>
+    <string name="precedent">Précedent</string>
+    <string name="signature">Signature</string>
+    <string name="demarrer">Demarrer</string>
+    <string name="client">Client</string>
+    <string name="commande">N° Commande</string>
+    <string name="facture">N° Facture</string>
+    <string name="livraison">ID Livraison</string>
+    <string name="date">Date Livraison</string>
+</resources>

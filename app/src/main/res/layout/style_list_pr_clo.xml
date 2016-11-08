@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:id="@+id/Idproduit"
+            android:textColor="@android:color/black"
+            android:textSize="10dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:id="@+id/Designation"
+            android:textColor="@android:color/black"
+            android:textSize="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Large Text"
+            android:id="@+id/qtestime"
+            android:textSize="10dp"
+            />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="10dp"
+            android:id="@+id/qtereel"
+            android:text="Large Text"
+            />
+    </LinearLayout>
+</LinearLayout>
+

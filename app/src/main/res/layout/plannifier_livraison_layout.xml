@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".planifier_livraison_activity"
+    android:id="@+id/relativeLayout1"
+    android:background="@drawable/bd_planifier_livraison">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/menu"
+            android:id="@+id/btnAcceuil"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_marginLeft="100dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:id="@+id/login_dispalay" />
+
+        <Button
+            android:id="@+id/btndeconnexion"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/close"
+            android:layout_marginLeft="80dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="119dp"
+        >
+
+        <TextView
+            android:layout_width="159dp"
+            android:layout_height="31dp"
+            android:id="@+id/clients"
+            android:textColor="@android:color/white"
+            android:background="@drawable/select_box_client_1"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            />
+
+         <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+             android:layout_marginTop="14dp"
+            >
+             <EditText
+                 android:layout_width="175dp"
+                 android:layout_height="45dp"
+                 android:id="@+id/CmdEditText"
+                 android:layout_alignBottom="@+id/CommandeTextView"
+                 android:layout_toRightOf="@+id/btnImprim"
+                 android:layout_alignRight="@+id/livrEditText"
+                 android:layout_alignEnd="@+id/livrEditText"
+                 android:hint="N° Commande"
+                 android:focusable="false"
+                 />
+
+             <EditText
+                 android:layout_width="175dp"
+                 android:layout_height="45dp"
+                 android:hint="N° Facture"
+                 android:id="@+id/editText"
+                 android:focusable="false"/>
+         </LinearLayout>
+        <LinearLayout
+                 xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="horizontal"
+                 android:gravity="center"
+            android:layout_marginTop="5dp"
+                 >
+
+
+
+             <EditText
+                 android:layout_width="175dp"
+                 android:layout_height="45dp"
+                 android:id="@+id/livrEditText"
+                 android:hint="ID Livraison"
+                 android:layout_alignBottom="@+id/LivraisonTextView"
+                 android:layout_toRightOf="@+id/LivraisonTextView"
+                 android:layout_toEndOf="@+id/LivraisonTextView"
+                 android:focusable="false"/>
+
+             <EditText
+                 android:layout_width="175dp"
+                 android:layout_height="45dp"
+                 android:inputType="date"
+                 android:hint="Date livraison"
+                 android:id="@+id/DateLivEditText"
+                 android:layout_alignBottom="@+id/textView5"
+                 android:layout_toRightOf="@+id/textView5"
+                 android:layout_toEndOf="@+id/textView5"
+                 android:focusable="false"/>
+
+         </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="277dp">
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:id="@+id/relativeLayout"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="Id"
+                android:id="@+id/Idpr"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Désignation"
+                android:id="@+id/Desig"
+                android:textColor="#fff" />
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+
+                android:gravity="center"
+                >
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal"
+
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="25dp"
+                        android:background="#000000"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="Quantité"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal"
+
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="25dp"
+                        android:background="#000000"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:id="@+id/qtestim"
+                        android:text="Planifiée"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:gravity="center"
+                        android:background="#000000"
+                        android:padding="2dp"
+                        android:id="@+id/qtereel"
+                        android:text="Livrée"
+                        android:textColor="#fff" />
+                </LinearLayout>
+             </LinearLayout>
+
+
+        </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:id="@+id/listProduitsL"
+        android:layout_weight="1.52"
+        android:choiceMode="singleChoice"
+        android:listSelector="#8A2CBBFF"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="320dp"/>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="480dp"
+        >
+        <Button
+            android:id="@+id/buttonAnnuler"
+            android:layout_width="103dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/annuler"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/btnValider"
+            android:layout_width="103dp"
+            android:layout_height="50dp"
+            android:onClick="OnClickValider"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/textView5"
+            android:layout_toEndOf="@+id/textView5"
+            android:background="@drawable/valider"/>
+
+
+     </LinearLayout>
+
+    <!--
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imprimer"
+            android:id="@+id/btnImprim"
+            />
+    -->
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="@drawable/bg_accueil">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/login_dispalay"
+            android:text="testdsdd"
+            android:layout_marginLeft="150dp"
+            />
+
+        <Button
+            android:id="@+id/btndeconnexion"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/close"
+            android:layout_marginLeft="80dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="45dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_height="155dp"
+                android:layout_width="110dp"
+                android:background="@drawable/tournnee_jour_btn_accueil"
+                android:id="@+id/initournee"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"/>
+
+            <Button
+
+                android:layout_height="155dp"
+                android:layout_width="110dp"
+                android:background="@drawable/livraison_off_btn_accueil"
+                android:id="@+id/livraison"
+                android:layout_marginRight="7dp"
+                />
+
+            <Button
+                android:layout_height="155dp"
+                android:layout_width="110dp"
+                android:background="@drawable/prise_comande_off_btn_accueil"
+                android:id="@+id/commande"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp">
+
+
+
+            <Button
+                android:layout_height="155dp"
+                android:layout_width="110dp"
+                android:background="@drawable/paiement_off_btn_accueil"
+                android:id="@+id/encaisement"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                />
+
+
+            <Button
+                android:layout_height="155dp"
+                android:layout_width="110dp"
+                android:background="@drawable/visualisation_du_stock_off_btn_accueil"
+                android:id="@+id/stock"
+                android:layout_marginRight="7dp"
+
+                 />
+
+            <Button
+                android:layout_height="155dp"
+                android:layout_width="110dp"
+                android:background="@drawable/prospect_off_btn_accueil"
+                android:id="@+id/imageButton3"
+                android:layout_marginRight="7dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp">
+
+            <Button
+                android:layout_height="155dp"
+                android:layout_width="110dp"
+                android:background="@drawable/retourn_off_btn_accueil"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                 />
+
+            <Button
+                android:layout_height="155dp"
+                android:layout_width="110dp"
+                android:background="@drawable/cloture_off_btn_accueil"
+                android:id="@+id/CloturerTournee"
+                android:layout_marginRight="7dp"
+             />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

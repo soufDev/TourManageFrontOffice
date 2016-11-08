@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stock_activity"
+    android:background="@drawable/bg_cloture_3_1">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:id="@+id/relativeLayout"
+        android:gravity="center"
+        >
+
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/menu"
+            android:id="@+id/btnAcceuil"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_marginLeft="100dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:id="@+id/login_dispalay" />
+
+        <Button
+            android:id="@+id/btndeconnexion"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/close"
+            android:layout_marginLeft="80dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="140dp"
+
+                >
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DateDebutTournee"
+                    android:text="Date début : 06/10/2016"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DateFinTournee"
+                    android:text="Date fin : 06/10/2016"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@android:color/background_dark"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EcartStockFinal"
+                    android:text="Ecart stock : 0"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EcartCaisseFinal"
+                    android:text="Ecart caisse : 1000"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@android:color/background_dark"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="180dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout"
+                android:background="@drawable/champ_signature"
+                android:layout_marginTop="60dp"/>
+
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+
+                >
+                <Button
+                    android:id="@+id/buttonAnnuler"
+                    android:layout_width="103dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/annuler"
+                    android:layout_marginRight="5dp"
+                    android:onClick="annuler"
+                    />
+                <Button
+                    android:id="@+id/btnValider"
+                    android:layout_width="103dp"
+                    android:layout_height="50dp"
+                    android:onClick="precedent"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/precedent"/>
+
+                <Button
+                    android:id="@+id/btncloturer"
+                    android:onClick="cloturer"
+                    android:layout_width="103dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/cloturer_1"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>
